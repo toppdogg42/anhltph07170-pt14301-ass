@@ -39,7 +39,8 @@
               "src/assets/js/jquery-2.1.1.min.js",
               "src/assets/js/jstree.min.js",
               "src/assets/js/owl.carousel.min.js",
-              "src/assets/js/template.js"
+              "src/assets/js/template.js",
+              "src/assets/js/parally.js"
             ]
           },
           "configurations": {
