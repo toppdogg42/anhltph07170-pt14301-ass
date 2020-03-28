@@ -20,6 +20,6 @@ product:Product = new Product();
   }
   
 addProduct(){
-  this.productService.addProduct(this.product).subscribe(data=> this.router.navigateByUrl("/qlsp"));
+  this.productService.addProduct(this.product).subscribe(data=> this.router.navigateByUrl("/manager"));
 }
 }

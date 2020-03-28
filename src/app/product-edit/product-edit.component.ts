@@ -28,7 +28,7 @@ getProduct(){
   }
   updataProduct (){
     this.productService.updateProduct(this.product).subscribe(data =>{
-      this.router.navigate(['/qlsp']);
+      this.router.navigate(['/manager']);
     });
     
   }
