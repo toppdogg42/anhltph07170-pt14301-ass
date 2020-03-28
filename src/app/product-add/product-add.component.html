@@ -3,7 +3,7 @@
 	<!-- Sidebar -->
 	<ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 		<!-- Sidebar - Brand -->
-		<a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+		<a class="sidebar-brand d-flex align-items-center justify-content-center" routerLink="/manager">
 			<div class="sidebar-brand-icon rotate-n-15">
 				<i class="fas fa-laugh-wink"></i>
 			</div>
@@ -15,7 +15,7 @@
 
 		<!-- Nav Item - Dashboard -->
 		<li class="nav-item">
-			<a class="nav-link" href="index.html">
+			<a class="nav-link" routerLink="/manager">
 				<i class="fas fa-fw fa-tachometer-alt"></i>
 				<span>Dashboard</span></a>
 		</li>
@@ -176,7 +176,7 @@
     </div>
 													<div class="form-group">
 														<label for="exampleFormControlFile1">Image</label>
-														<input type="file" id="avatar" name="img"
+														<input type="file" id="avatar"  name="img"
        accept="image/png, image/jpeg" [(ngModel)]="product.img">
   </div>
 														<fieldset class="form-group">
