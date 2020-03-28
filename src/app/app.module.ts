@@ -20,11 +20,12 @@ import { AboutComponent } from './about/about.component';
 import { AdminComponent } from './admin/admin.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
+import { ProductManagerComponent } from './product-manager/product-manager.component';
 
 @NgModule({
   imports:      [ BrowserModule,AppRoutingModule, FormsModule,HttpClientModule ],
   exports:[RouterModule],
-  declarations: [ AppComponent, HelloComponent, ProductComponent, ProductListComponent, SlideComponent, CategoryComponent, HomeComponent, QlspComponent, ProductDetailComponent, ProductAddComponent, ProductEditComponent, AboutComponent, AdminComponent, HeaderComponent, FooterComponent ],
+  declarations: [ AppComponent, HelloComponent, ProductComponent, ProductListComponent, SlideComponent, CategoryComponent, HomeComponent, QlspComponent, ProductDetailComponent, ProductAddComponent, ProductEditComponent, AboutComponent, AdminComponent, HeaderComponent, FooterComponent, ProductManagerComponent ],
   bootstrap:    [ AppComponent ],
   providers: [ProductService]
 })

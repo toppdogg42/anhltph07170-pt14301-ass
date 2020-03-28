@@ -24,12 +24,12 @@
             ],
             "styles": [
               "src/styles.css",
-              "src/assets/css/bootstrap.min.css",
               "src/assets/css/font-awesome.min.css", 
               "src/assets/css/owl.carousel.css",   
               "src/assets/css/owl.transitions.css",               
               "src/assets/css/responsive.css",
               "src/assets/css/stylesheet.css"
+              
 
             ],
             "scripts": [
@@ -40,7 +40,10 @@
               "src/assets/js/jstree.min.js",
               "src/assets/js/owl.carousel.min.js",
               "src/assets/js/template.js",
-              "src/assets/js/parally.js"
+              "src/assets/js/parally.js",
+               "src/assets/css/all.min.css",
+              "src/assets/css/dataTables.bootstrap4.min.css",
+              "src/assets/css/sb-admin-2.min.css"
             ]
           },
           "configurations": {
