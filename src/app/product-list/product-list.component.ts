@@ -8,7 +8,10 @@ import { ProductService } from "../service/product.service";
   styleUrls: ["./product-list.component.css"]
 })
 export class ProductListComponent implements OnInit {
+  value: string = "";
   products: Product[];
+  page = 1;
+  pageSize= 6;
   constructor(private productService: ProductService) {}
 
   ngOnInit() {
@@ -22,5 +25,10 @@ getProduct(){
   showDetail(product) {
     this.selected = product;
   }
-  
+  search = event =>{
+    this.products = this.products.filter(product => product.name == this.value);
+  }
+  searchValue = event => {
+    this.value = event.target.value;
+  }
 }

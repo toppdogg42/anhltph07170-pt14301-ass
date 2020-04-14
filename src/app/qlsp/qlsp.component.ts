@@ -8,6 +8,7 @@ import { ProductService } from '../service/product.service';
   styleUrls: ['./qlsp.component.css']
 })
 export class QlspComponent implements OnInit {
+  value: string = "";
 page=1;
 pageSize=3;
   constructor(
@@ -25,5 +26,11 @@ products = Data;
     // this.products = this.products.filter(product => product.id != id);
     this.productService.removeProduct(id).subscribe(reponse =>{
        this.products= this.products.filter(product => product.id != reponse.id)});
+  }
+  search = event =>{
+    this.products = this.products.filter(product => product.name == this.value);
+  }
+  searchValue = event => {
+    this.value = event.target.value;
   }
 }
