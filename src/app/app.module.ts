@@ -21,9 +21,10 @@ import { AdminComponent } from './admin/admin.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { ProductManagerComponent } from './product-manager/product-manager.component';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
-  imports:      [ BrowserModule,AppRoutingModule, FormsModule,HttpClientModule ],
+  imports:      [ BrowserModule,AppRoutingModule, FormsModule,HttpClientModule,NgbModule ],
   exports:[RouterModule],
   declarations: [ AppComponent, HelloComponent, ProductComponent, ProductListComponent, SlideComponent, CategoryComponent, HomeComponent, QlspComponent, ProductDetailComponent, ProductAddComponent, ProductEditComponent, AboutComponent, AdminComponent, HeaderComponent, FooterComponent, ProductManagerComponent ],
   bootstrap:    [ AppComponent ],
