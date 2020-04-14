@@ -8,7 +8,8 @@ import { ProductService } from '../service/product.service';
   styleUrls: ['./qlsp.component.css']
 })
 export class QlspComponent implements OnInit {
-
+page=1;
+pageSize=3;
   constructor(
     private productService: ProductService
   ) { }
